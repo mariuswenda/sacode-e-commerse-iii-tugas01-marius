@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Easy Tutorials sacode</title>
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+	<div class="hero click">
+
+			<button class="btn" id ="btn">click hero!
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+	<script>
+		let btn = Document.getElementById("btn");
+		let spans = Document.getElementsByTagName("span");
+		
+		btn.onclick = function(){
+			for(span of spans){
+				span.classlist.add("anim");
+			}
+			setTimeout(function(){
+				for(span of spans){
+					span.classlist.remove("anim");
+			}
+		},500);
+	}
+	</script>
+</body>
+</html>
